@@ -270,6 +270,4 @@ pnpm build:export
 ```
 
 
-## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=u14app/gemini-next-chat&type=Date)](https://star-history.com/#u14app/gemini-next-chat&Date)

@@ -269,56 +269,6 @@ You can also build a static page version directly, and then upload all files in 
 pnpm build:export
 ```
 
-If you deploy the project in a subdirectory and encounter resource loading failures when accessing, please add `EXPORT_BASE_PATH=/path/project` in the `.env` file or variable setting page.
-
-## Acknowledgments
-
-### Technology Stack
-
-- [Next.js](https://nextjs.org/)
-- [Shadcn UI](https://ui.shadcn.com/)
-- [Tailwindcss](https://tailwindcss.com/)
-- [Zustand](https://zustand-demo.pmnd.rs/)
-
-### Inspiration
-
-- [Lobe Chat](https://github.com/lobehub/lobe-chat)
-- [Next Web](https://github.com/ChatGPTNextWeb/NextChat)
-- [Open Canvas](https://github.com/langchain-ai/open-canvas)
-
-## FAQ
-
-#### Solution for “User location is not supported for the API use”
-
-1. Use Cloudflare AI Gateway to forward APIs. Currently, Cloudflare AI Gateway already supports Google Vertex AI related APIs. For how to use it, please refer to [How to Use Cloudflare AI Gateway](./docs/Use-Cloudflare-AI-Gateway.md). This solution is fast and stable, and is **recommended**.
-
-2. Use Cloudflare Worker for API proxy forwarding. For detailed settings, please refer to [How to Use Cloudflare Worker Proxy API](./docs/How-to-deploy-the-Cloudflare-Worker-api-proxy.md). Note that this solution may not work properly in some cases.
-
-#### Why can't I access the website in China after deploying it with one click using Vercel
-
-The domain name generated after deploying Vercel was blocked by the Chinese network a few years ago, but the server's IP address was not blocked. You can customize the domain name and access it normally in China. Since Vercel does not have a server in China, it is normal to have some network fluctuations sometimes. For how to set the domain name, you can refer to the solution article [Vercel binds a custom domain name](https://docs.tangly1024.com/article/vercel-domain) that I found online.
-
-#### Why can't I use Multimodal Live
-
-Currently, the Multimodal Live API is only supported by the Gemini 2.0 Flash model, so you need to use the Gemini 2.0 Flash model to use it. Since the Gemini Multimodal Live API is not accessible in China, you may need to deploy a proxy forwarding API using Cloudflare Worker. For more information, refer to [Proxying the Multimodal Live API with Cloudflare Worker](./docs/Proxying-the-Multimodal-Live-API-with-Cloudflare-Worker.md).
-_Currently, Multimodal Live API does not support Chinese voice output._
-
-## Contributing
-
-Contributions to this project are welcome! If you would like to contribute, please follow these steps:
-
-1. Fork the repository on GitHub.
-2. Clone your fork to your local machine.
-3. Create a new branch for your changes.
-4. Make your changes and commit them to your branch.
-5. Push your changes to your fork on GitHub.
-6. Open a pull request from your branch to the main repository.
-
-Please ensure that your code follows the project's coding style and that all tests pass before submitting a pull request. If you find any bugs or have suggestions for improvements, feel free to open an issue on GitHub.
-
-## LICENSE
-
-This project is licensed under the [MIT](https://www.apache.org/licenses/LICENSE-2.0) License. See the LICENSE file for the full license text.
 
 ## Star History
 
